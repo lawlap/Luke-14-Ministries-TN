@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-neutral-800 bg-white;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto max-w-6xl px-4 sm:px-6;
+  }
+  .btn {
+    @apply inline-block rounded px-6 py-3 font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-white hover:bg-brand-dark;
+  }
+  .btn-outline {
+    @apply btn border-2 border-brand text-brand hover:bg-brand hover:text-white;
+  }
+  .btn-gold {
+    @apply btn bg-brand-gold text-white hover:bg-amber-600;
+  }
+  .prose-site {
+    @apply space-y-4 leading-relaxed text-lg;
+  }
+}
