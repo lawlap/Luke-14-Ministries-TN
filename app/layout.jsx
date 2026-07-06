@@ -10,6 +10,10 @@ export const metadata = {
   },
   description:
     'Luke 14 Ministries helps families and individuals affected by disability find community and connection to Jesus through His church.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }) {
